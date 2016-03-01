@@ -1,0 +1,19 @@
+{
+  "name": "visual-regression-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "casperjs test ./tests.js",
+    "report": "node ./report.js",
+    "fresh-start": "rm screenshots/* && rm failures/* && casperjs test ./tests.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Todr",
+  "dependencies": {
+    "casperjs": "^1.1.0-beta3",
+    "phantomcss": "^0.10.4",
+    "phantomjs": "^1.9.18",
+    "resemblejs": "^1.3.0"
+  }
+}
